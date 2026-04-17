@@ -64,6 +64,28 @@
                             Manajemen Poli
                         </a>
             </div>
+            <div class="space-y-1">
+            <a href="{{route('dokter.index')}}"
+                        class="{{$baseLink}} {{request()->routeIs('dokter.*')? $active : $inactive}}">
+                        <i class="fas fa-user-doctor w-4 text-center"></i>
+                            Manajemen Dokter
+                        </a>
+            </div>
+            <div class="space-y-1">
+            <a href="{{route('pasien.index')}}"
+                        class="{{$baseLink}} {{request()->routeIs('pasien.*')? $active : $inactive}}">
+                        <i class="fas fa-bed-pulse w-4 text-center"></i>
+                            Manajemen Pasien
+                        </a>
+            </div>
+            <div class="space-y-1">
+            <a href="{{route('obat.index')}}"
+                        class="{{$baseLink}} {{request()->routeIs('obat.*')? $active : $inactive}}">
+                        <i class="fas fa-pills w-4 text-center"></i>
+                            Manajemen obat
+                        </a>
+            </div>
+    
     
         </div>
         @endif

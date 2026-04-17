@@ -55,7 +55,7 @@
     } else {
         document.exitFullscreen();
         icon.classList.remove('fa-compress');
-        icon.classList.add('fa-expand');
+        icon.classList.add('fa-expand');csd 
     }
 }
 </script>
