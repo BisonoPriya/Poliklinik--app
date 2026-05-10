@@ -37,8 +37,8 @@ class DokterController extends Controller
             'nama'=> 'required|string|max:255',
             'alamat'=> 'required|string',
             'no_ktp'=> 'required|string|max:16|unique:users,no_ktp,',
-            'no_hp'=> 'required|string|max15',
-            'id_poli'=> 'required|string|exsist:poli,id',
+            'no_hp'=> 'required|string|max:15',
+            'id_poli'=> 'required|string|exists:poli,id',
             'email'=> 'required|string|unique:users,email,',
             'password'=> 'required|string|min:6',
         ]);
